@@ -1,0 +1,7 @@
+<div *ngIf="pager" class="pagination">
+    <a (click)="setCurrentPage(1)" [class.disabled]="pager.currentPage == 1">First</a>
+    <a (click)="setCurrentPage(pager.currentPage - 1)" [class.disabled]="pager.currentPage == 1">Previous</a>
+    <a (click)="setCurrentPage(page)" *ngFor="let page of pager.pages" [class.active]="pager.currentPage == page">{{page}}</a>
+    <a (click)="setCurrentPage(pager.currentPage + 1)" [class.disabled]="pager.currentPage == pager.totalPages">Next</a>
+    <a (click)="setCurrentPage(pager.totalPages)" [class.disabled]="pager.currentPage == pager.totalPages">Last</a>
+</div>

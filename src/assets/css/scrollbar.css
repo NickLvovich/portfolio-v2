@@ -1,0 +1,27 @@
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #dbcb9a;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffff;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #ffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #dbcb9a;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #ffff;
+}
+
+::-webkit-resizer {
+    background-color: #ffff;
+}

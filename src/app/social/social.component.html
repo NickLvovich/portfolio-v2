@@ -1,0 +1,9 @@
+    <!--Social Icons in Header-->
+    <ul class="social-icons">
+        <li *ngFor="let websites of socialsites">
+            <a target="{{websites.target}}" title="{{websites.title}}" href="https://www.facebook.com/{{websites.username}}">
+                <i class="fa fa-{{websites.icon}} fa-1x"></i><span>{{websites.title}}</span>
+            </a>
+        </li>
+    </ul>
+    <!--End of Social Icons in Header-->

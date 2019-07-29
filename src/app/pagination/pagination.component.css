@@ -1,0 +1,35 @@
+.pagination{
+  display: flex;
+  flex-flow: row wrap;
+}
+.pagination a{
+  background: #fff;
+  box-shadow: 0 0 4px 0px gray;
+  margin-left: 2px;
+  border-radius: 1%;
+  padding: 10px 15px 10px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.pagination a{
+  color: black;
+}
+.pagination a,a::selection{
+  background: none;
+}
+.pagination a:hover{
+  background: #dbcb9a;
+  transition: 0.8s;
+}
+
+.pagination a.active{
+  transform: scale(1.06);
+  transition: 0.3s;
+  background: #d2ab56;
+}
+
+.pagination a.disabled{
+  background: #272727;
+  cursor: default;
+  color: white;
+}
